@@ -3,7 +3,7 @@ import { QuestionEntity } from "./domain/entities/question.entity";
 export const questions: QuestionEntity.Question[] = [
   {
     id: '1',
-    audio: '/1.mp3',
+    audio: import.meta.env.BASE_URL + '/1.mp3',
     title: "Câu số 1: Nghe và đoán tên bài hát sau đây là gì?",
     answers: [
       { content: 'Ước mơ của mẹ', correct: true },
@@ -14,18 +14,18 @@ export const questions: QuestionEntity.Question[] = [
   },
   {
     id: '2',
-    audio: '/2.mp3',
+    audio: import.meta.env.BASE_URL + '/2.mp3',
     title: "Câu số 2: Nghe và đoán tên bài hát sau đây là gì?",
     answers: [
       { content: 'Safe and Sound', correct: true },
-      { content: 'Teardrops on my guitar', correct: true },
+      { content: 'Teardrops on my guitar' },
       { content: 'Love story' },
       { content: 'You belong with me' }
     ]
   },
   {
     id: '3',
-    audio: '/3.mp3',
+    audio: import.meta.env.BASE_URL + '/3.mp3',
     title: "Câu số 3: Nghe và đoán tên bài hát sau đây là gì?",
     answers: [
       { content: 'Kiss The Rain', correct: true },
@@ -36,7 +36,7 @@ export const questions: QuestionEntity.Question[] = [
   },
   {
     id: '4',
-    audio: '/4.mp3',
+    audio: import.meta.env.BASE_URL + '/4.mp3',
     title: "Câu số 4: Nghe và đoán tên bài hát sau đây là gì?",
     answers: [
       { content: 'Nơi này có anh',  correct: true },
@@ -47,7 +47,7 @@ export const questions: QuestionEntity.Question[] = [
   },
   {
     id: '5',
-    audio: '/5.mp3',
+    audio: import.meta.env.BASE_URL + '/5.mp3',
     title: "Câu số 5: Nghe và đoán tên bài hát sau đây là gì?",
     answers: [
       { content: 'Ba Kể Con Nghe',  correct: true },
